@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_dialog_info"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="ABOUT THE GAME"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold|italic"
+        app:autoSizeMaxTextSize="22sp"
+        app:autoSizeMinTextSize="14sp"
+        app:autoSizeTextType="uniform" />
+
+    <FrameLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_menu_circle_btn">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="?"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Goal — combine tiles to reach\nthe 2048 number!"
+        android:textColor="#CCCCCC"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Created by Asadbek Isroilov"
+        android:textColor="#888888"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_menu_start_btn"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingHorizontal="16dp"
+        android:text="GOT IT"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:autoSizeMaxTextSize="20sp"
+        app:autoSizeMinTextSize="14sp"
+        app:autoSizeTextType="uniform" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

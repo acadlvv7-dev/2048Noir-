@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_dialog_info"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/bg_menu_circle_btn">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="2048"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="YOUR RESULT"
+        android:textColor="#A0A0C0"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/scoreValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        app:autoSizeMaxTextSize="44sp"
+        app:autoSizeMinTextSize="24sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="#33FFFFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="RECORD"
+        android:textColor="#A0A0C0"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/recordValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="0"
+        android:textColor="#FF4081"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:autoSizeMaxTextSize="26sp"
+        app:autoSizeMinTextSize="16sp"
+        app:autoSizeStepGranularity="1sp"
+        app:autoSizeTextType="uniform" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/homeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_menu_start_btn"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingHorizontal="16dp"
+        android:text="BACK TO MENU"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:autoSizeMaxTextSize="20sp"
+        app:autoSizeMinTextSize="14sp"
+        app:autoSizeTextType="uniform" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

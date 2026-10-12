@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E0B1F"
+    tools:context="com.asadbek.noir2048.Fragments.GameScreenFragment">
+
+    <LinearLayout
+        android:id="@+id/score_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="85dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_score_box"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RECORD"
+                android:textColor="#FF69B4"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/recordValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="26sp"
+                app:autoSizeMinTextSize="14sp"
+                app:autoSizeTextType="uniform" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="85dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_current_box"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CURRENT BAL"
+                android:textColor="#9370DB"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/scoreValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="26sp"
+                app:autoSizeMinTextSize="14sp"
+                app:autoSizeTextType="uniform" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_container"
+        android:orientation="vertical"
+        android:padding="4dp"
+        app:layout_constraintBottom_toTopOf="@id/bottom_controls"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/score_container"
+        app:layout_constraintVertical_bias="0.3">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="4dp" android:layout_weight="1" android:background="@drawable/bg_0" android:gravity="center" android:textSize="28sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="4dp" android:layout_weight="1" android:background="@drawable/bg_0" android:gravity="center" android:textSize="28sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="4dp" android:layout_weight="1" android:background="@drawable/bg_0" android:gravity="center" android:textSize="28sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="4dp" android:layout_weight="1" android:background="@drawable/bg_0" android:gravity="center" android:textSize="28sp" android:textStyle="bold" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="4dp" android:layout_weight="1" android:background="@drawable/bg_0" android:gravity="center" android:textSize="28sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="4dp" android:layout_weight="1" android:background="@drawable/bg_0" android:gravity="center" android:textSize="28sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="4dp" android:layout_weight="1" android:background="@drawable/bg_0" android:gravity="center" android:textSize="28sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="4dp" android:layout_weight="1" android:background="@drawable/bg_0" android:gravity="center" android:textSize="28sp" android:textStyle="bold" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="4dp" android:layout_weight="1" android:background="@drawable/bg_0" android:gravity="center" android:textSize="28sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="4dp" android:layout_weight="1" android:background="@drawable/bg_0" android:gravity="center" android:textSize="28sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="4dp" android:layout_weight="1" android:background="@drawable/bg_0" android:gravity="center" android:textSize="28sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="4dp" android:layout_weight="1" android:background="@drawable/bg_0" android:gravity="center" android:textSize="28sp" android:textStyle="bold" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="4dp" android:layout_weight="1" android:background="@drawable/bg_0" android:gravity="center" android:textSize="28sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="4dp" android:layout_weight="1" android:background="@drawable/bg_0" android:gravity="center" android:textSize="28sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="4dp" android:layout_weight="1" android:background="@drawable/bg_0" android:gravity="center" android:textSize="28sp" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="4dp" android:layout_weight="1" android:background="@drawable/bg_0" android:gravity="center" android:textSize="28sp" android:textStyle="bold" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <LinearLayout
+        android:id="@+id/bottom_controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/back_btn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_game_circle_btn"
+                android:clickable="true"
+                android:focusable="true">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/back_btnnn"
+                    app:tint="@color/white" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="UNDO"
+                android:textColor="#5C5C8A"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/home_btn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_game_circle_btn"
+                android:clickable="true"
+                android:focusable="true">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/home_btn"
+                    app:tint="@color/white" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="HOME"
+                android:textColor="#5C5C8A"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/restart"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_game_circle_btn"
+                android:clickable="true"
+                android:focusable="true">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/restart"
+                    app:tint="@color/white" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="RESTART"
+                android:textColor="#5C5C8A"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
