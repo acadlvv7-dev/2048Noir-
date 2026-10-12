@@ -6,6 +6,16 @@ A dark-themed 2048 puzzle game for Android.
 
 > 📚 **Note:** This project was created while I was learning Android development. The code is not perfect and may contain mistakes or messy parts. I'm improving it as I learn.
 
+## Screenshots
+
+<p align="center">
+  <img src="1.jpg" width="18%" />
+  <img src="2.jpg" width="18%" />
+  <img src="3.jpg" width="18%" />
+  <img src="4.jpg" width="18%" />
+  <img src="5.jpg" width="18%" />
+</p>
+
 ## How to play
 - Swipe to move all tiles in one direction.
 - When two tiles with the same number touch, they merge into one.
